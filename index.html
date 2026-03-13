@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI赋能各行各业 — 让AI为您的企业注入智能力量</title>
+    <meta name="description" content="我们与客户共创AI解决方案，助力传统企业实现智能化转型。真实案例，真正赋能。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect x="2" y="2" width="28" height="28" rx="8" stroke="url(#logoGrad)" stroke-width="2.5"/>
+                        <path d="M10 22L16 10L22 22" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="16" cy="16" r="3" fill="url(#logoGrad)"/>
+                        <defs>
+                            <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32">
+                                <stop stop-color="#6366f1"/>
+                                <stop offset="1" stop-color="#06b6d4"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </span>
+                <span class="logo-text">AI赋能</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#cases">案例展示</a></li>
+                <li><a href="#process">合作流程</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">预约咨询</a>
+            <button class="nav-toggle" id="navToggle" aria-label="菜单">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero 区域 -->
+    <section class="hero" id="hero">
+        <canvas id="heroCanvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge">🚀 AI + 行业 = 无限可能</div>
+            <h1 class="hero-title">
+                <span class="title-line">AI赋能</span>
+                <span class="title-line gradient-text">各行各业</span>
+            </h1>
+            <p class="hero-desc">
+                我们与客户深度共创，将AI技术融入真实业务场景。<br>
+                不是做演示，是做落地；不是买工具，是建能力。
+            </p>
+            <div class="hero-actions">
+                <a href="#cases" class="btn btn-primary">
+                    <span>查看共创案例</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-outline">预约免费咨询</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">共创案例</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="20">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">覆盖行业</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="95">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">客户满意度</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>向下滚动探索</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">ABOUT US</span>
+                <h2 class="section-title">为什么选择我们</h2>
+                <p class="section-desc">我们不卖通用产品，我们与您一起，用AI解决您行业中最真实的问题</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card" data-aos="fade-up">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 5L35 13V27L20 35L5 27V13L20 5Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 19V35M20 19L5 13M20 19L35 13" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>深度共创模式</h3>
+                    <p>不是给方案就走，而是深入您的业务，与您的团队一起从需求分析到系统上线全程协作。</p>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="2"/>
+                            <path d="M14 20L18 24L26 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>真实落地交付</h3>
+                    <p>每一个案例都是真实的业务场景，可衡量的效果提升，而非概念验证的PPT。</p>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M8 20C8 13.37 13.37 8 20 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M32 20C32 26.63 26.63 32 20 32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="20" cy="20" r="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 4V8M20 32V36M4 20H8M32 20H36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>行业AI能力沉淀</h3>
+                    <p>帮助您的团队理解AI、用好AI，让智能化成为企业自己的核心竞争力。</p>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="6" y="14" width="12" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <rect x="22" y="6" width="12" height="28" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M18 24H22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>全栈技术支撑</h3>
+                    <p>涵盖大模型、计算机视觉、自然语言处理、智能自动化等全方位AI技术能力。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 案例展示 -->
+    <section class="section cases" id="cases">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">CASE STUDIES</span>
+                <h2 class="section-title">共创案例展示</h2>
+                <p class="section-desc">每一个案例，都是一段与客户携手前行的真实故事</p>
+            </div>
+
+            <!-- 筛选标签 -->
+            <div class="case-filters">
+                <button class="filter-btn active" data-filter="all">全部案例</button>
+                <button class="filter-btn" data-filter="manufacturing">智能制造</button>
+                <button class="filter-btn" data-filter="retail">新零售</button>
+                <button class="filter-btn" data-filter="finance">金融科技</button>
+                <button class="filter-btn" data-filter="healthcare">医疗健康</button>
+                <button class="filter-btn" data-filter="education">教育培训</button>
+            </div>
+
+            <!-- 案例列表 -->
+            <div class="case-list">
+
+                <!-- 案例 1 -->
+                <article class="case-card" data-category="manufacturing" data-aos="fade-up">
+                    <div class="case-media">
+                        <div class="case-image">
+                            <div class="placeholder-img" style="background: linear-gradient(135deg, #1e3a5f, #0ea5e9);">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" opacity="0.3">
+                                    <rect x="10" y="30" width="60" height="40" rx="4" stroke="white" stroke-width="2"/>
+                                    <path d="M25 30V20H55V30" stroke="white" stroke-width="2"/>
+                                    <circle cx="40" cy="50" r="8" stroke="white" stroke-width="2"/>
+                                </svg>
+                                <span class="img-label">智能质检系统</span>
+                            </div>
+                        </div>
+                        <button class="play-btn" data-video="case1">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M8 5V19L19 12L8 5Z"/>
+                            </svg>
+                            <span>观看案例视频</span>
+                        </button>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-meta">
+                            <span class="case-tag">智能制造</span>
+                            <span class="case-date">2025年合作</span>
+                        </div>
+                        <h3 class="case-title">AI视觉质检 — 某大型汽车零部件制造商</h3>
+                        <p class="case-summary">
+                            通过深度学习视觉检测系统，将产品质检准确率从92%提升至99.7%，
+                            误检率降低85%，每条产线每年节省人工成本超120万元。
+                        </p>
+                        <div class="case-results">
+                            <div class="result-item">
+                                <span class="result-value">99.7%</span>
+                                <span class="result-label">检测准确率</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-value">85%</span>
+                                <span class="result-label">误检率降低</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-value">120万+</span>
+                                <span class="result-label">年节省成本</span>
+                            </div>
+                        </div>
+                        <a href="#" class="case-link">
+                            查看完整案例
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 案例 2 -->
+                <article class="case-card reverse" data-category="retail" data-aos="fade-up">
+                    <div class="case-media">
+                        <div class="case-image">
+                            <div class="placeholder-img" style="background: linear-gradient(135deg, #4c1d95, #a855f7);">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" opacity="0.3">
+                                    <path d="M20 25H60L55 55H25L20 25Z" stroke="white" stroke-width="2"/>
+                                    <path d="M20 25L15 15H10" stroke="white" stroke-width="2"/>
+                                    <circle cx="30" cy="62" r="4" stroke="white" stroke-width="2"/>
+                                    <circle cx="50" cy="62" r="4" stroke="white" stroke-width="2"/>
+                                </svg>
+                                <span class="img-label">智能零售系统</span>
+                            </div>
+                        </div>
+                        <button class="play-btn" data-video="case2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M8 5V19L19 12L8 5Z"/>
+                            </svg>
+                            <span>观看案例视频</span>
+                        </button>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-meta">
+                            <span class="case-tag">新零售</span>
+                            <span class="case-date">2025年合作</span>
+                        </div>
+                        <h3 class="case-title">AI智能选品与库存优化 — 某连锁零售品牌</h3>
+                        <p class="case-summary">
+                            基于销售数据与市场趋势分析，搭建AI驱动的智能选品和库存管理系统，
+                            滞销品比例降低40%，库存周转率提升30%，GMV增长22%。
+                        </p>
+                        <div class="case-results">
+                            <div class="result-item">
+                                <span class="result-value">40%</span>
+                                <span class="result-label">滞销品减少</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-value">30%</span>
+                                <span class="result-label">周转率提升</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-value">22%</span>
+                                <span class="result-label">GMV增长</span>
+                            </div>
+                        </div>
+                        <a href="#" class="case-link">
+                            查看完整案例
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 案例 3 -->
+                <article class="case-card" data-category="finance" data-aos="fade-up">
+                    <div class="case-media">
+                        <div class="case-image">
+                            <div class="placeholder-img" style="background: linear-gradient(135deg, #065f46, #10b981);">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" opacity="0.3">
+                                    <rect x="15" y="20" width="50" height="40" rx="4" stroke="white" stroke-width="2"/>
+                                    <path d="M25 45V35M35 45V30M45 45V38M55 45V28" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                <span class="img-label">智能风控平台</span>
+                            </div>
+                        </div>
+                        <button class="play-btn" data-video="case3">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M8 5V19L19 12L8 5Z"/>
+                            </svg>
+                            <span>观看案例视频</span>
+                        </button>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-meta">
+                            <span class="case-tag">金融科技</span>
+                            <span class="case-date">2024年合作</span>
+                        </div>
+                        <h3 class="case-title">AI智能风控决策引擎 — 某区域性商业银行</h3>
+                        <p class="case-summary">
+                            构建基于多维度数据融合的AI风控模型，实现贷前审批智能化。
+                            审批效率提升5倍，不良率降低60%，客户体验大幅改善。
+                        </p>
+                        <div class="case-results">
+                            <div class="result-item">
+                                <span class="result-value">5x</span>
+                                <span class="result-label">审批效率</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-value">60%</span>
+                                <span class="result-label">不良率降低</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-value">10秒</span>
+                                <span class="result-label">平均审批时间</span>
+                            </div>
+                        </div>
+                        <a href="#" class="case-link">
+                            查看完整案例
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 案例 4 -->
+                <article class="case-card reverse" data-category="healthcare" data-aos="fade-up">
+                    <div class="case-media">
+                        <div class="case-image">
+                            <div class="placeholder-img" style="background: linear-gradient(135deg, #991b1b, #f43f5e);">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" opacity="0.3">
+                                    <path d="M40 20C33 20 28 25 28 31C28 44 40 55 40 55C40 55 52 44 52 31C52 25 47 20 40 20Z" stroke="white" stroke-width="2"/>
+                                    <path d="M36 35H44M40 31V39" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                <span class="img-label">AI辅助诊断</span>
+                            </div>
+                        </div>
+                        <button class="play-btn" data-video="case4">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M8 5V19L19 12L8 5Z"/>
+                            </svg>
+                            <span>观看案例视频</span>
+                        </button>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-meta">
+                            <span class="case-tag">医疗健康</span>
+                            <span class="case-date">2025年合作</span>
+                        </div>
+                        <h3 class="case-title">AI辅助影像诊断 — 某三甲医院放射科</h3>
+                        <p class="case-summary">
+                            开发针对肺结节和骨折的AI辅助诊断系统，帮助放射科医生快速筛查。
+                            阅片效率提升3倍，漏诊率降低70%，医生工作负担显著减轻。
+                        </p>
+                        <div class="case-results">
+                            <div class="result-item">
+                                <span class="result-value">3x</span>
+                                <span class="result-label">阅片效率</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-value">70%</span>
+                                <span class="result-label">漏诊率降低</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-value">98.5%</span>
+                                <span class="result-label">检出准确率</span>
+                            </div>
+                        </div>
+                        <a href="#" class="case-link">
+                            查看完整案例
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 案例 5 -->
+                <article class="case-card" data-category="education" data-aos="fade-up">
+                    <div class="case-media">
+                        <div class="case-image">
+                            <div class="placeholder-img" style="background: linear-gradient(135deg, #92400e, #f59e0b);">
+                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" opacity="0.3">
+                                    <path d="M15 30L40 20L65 30L40 40L15 30Z" stroke="white" stroke-width="2"/>
+                                    <path d="M55 35V50C55 50 48 55 40 55C32 55 25 50 25 50V35" stroke="white" stroke-width="2"/>
+                                    <path d="M65 30V45" stroke="white" stroke-width="2"/>
+                                </svg>
+                                <span class="img-label">智慧教育平台</span>
+                            </div>
+                        </div>
+                        <button class="play-btn" data-video="case5">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M8 5V19L19 12L8 5Z"/>
+                            </svg>
+                            <span>观看案例视频</span>
+                        </button>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-meta">
+                            <span class="case-tag">教育培训</span>
+                            <span class="case-date">2024年合作</span>
+                        </div>
+                        <h3 class="case-title">AI个性化学习助手 — 某K12教育集团</h3>
+                        <p class="case-summary">
+                            打造基于大语言模型的智能学习助手，实现千人千面的个性化学习路径推荐。
+                            学生成绩平均提升15%，教师备课时间减少50%，续费率提高25%。
+                        </p>
+                        <div class="case-results">
+                            <div class="result-item">
+                                <span class="result-value">15%</span>
+                                <span class="result-label">成绩提升</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-value">50%</span>
+                                <span class="result-label">备课时间减少</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-value">25%</span>
+                                <span class="result-label">续费率提高</span>
+                            </div>
+                        </div>
+                        <a href="#" class="case-link">
+                            查看完整案例
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 视频弹窗 -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="video-placeholder">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                    <circle cx="40" cy="40" r="30" stroke="white" stroke-width="2" opacity="0.5"/>
+                    <path d="M34 28V52L56 40L34 28Z" fill="white" opacity="0.5"/>
+                </svg>
+                <p>视频加载中...</p>
+                <p class="video-note">请替换为实际案例视频链接</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 合作流程 -->
+    <section class="section process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">PROCESS</span>
+                <h2 class="section-title">共创合作流程</h2>
+                <p class="section-desc">从初次接触到成果交付，每一步都为您的成功而设计</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step" data-aos="fade-right">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>需求诊断</h3>
+                        <p>深入了解您的业务痛点，评估AI切入点，出具诊断报告和可行性分析。</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-left">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>方案共创</h3>
+                        <p>与您的业务团队一起设计解决方案，制定技术路线图和实施计划。</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-right">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>敏捷开发</h3>
+                        <p>采用敏捷模式快速迭代，每2周交付可见成果，确保方向正确。</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-left">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>部署上线</h3>
+                        <p>系统部署、数据迁移、压力测试，确保平稳上线运行。</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-right">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>持续赋能</h3>
+                        <p>提供团队培训、技术支持和持续优化，让AI能力真正沉淀在您的组织中。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 客户评价 -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">TESTIMONIALS</span>
+                <h2 class="section-title">客户怎么说</h2>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"他们真正做到了'共创'二字。不是丢给我们一个工具就走，而是手把手帮我们的团队建立起了AI思维方式。"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">张</div>
+                        <div>
+                            <strong>张总经理</strong>
+                            <span>某汽车零部件制造企业</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"AI选品系统上线后，我们的库存周转效率有了质的飞跃。团队从'怕AI'变成了'离不开AI'。"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">李</div>
+                        <div>
+                            <strong>李运营总监</strong>
+                            <span>某连锁零售品牌</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"从诊断到上线只用了3个月，效率远超我们预期。更重要的是，他们帮我们培养了一支自己的AI团队。"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">王</div>
+                        <div>
+                            <strong>王CTO</strong>
+                            <span>某区域商业银行</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section" id="contact">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-bg-pattern"></div>
+                <h2>准备好让AI赋能您的业务了吗？</h2>
+                <p>无论您是刚开始探索AI，还是已有明确需求，我们都期待与您交流。<br>首次咨询完全免费，没有任何承诺。</p>
+                <form class="cta-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="您的姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="company" placeholder="公司名称" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="联系电话" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="industry" required>
+                                <option value="" disabled selected>选择您的行业</option>
+                                <option value="manufacturing">制造业</option>
+                                <option value="retail">零售/电商</option>
+                                <option value="finance">金融</option>
+                                <option value="healthcare">医疗健康</option>
+                                <option value="education">教育</option>
+                                <option value="logistics">物流</option>
+                                <option value="realestate">房地产</option>
+                                <option value="other">其他行业</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <textarea id="message" placeholder="简单描述您的需求或想解决的问题" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        <span>提交咨询</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <span class="logo-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <rect x="2" y="2" width="28" height="28" rx="8" stroke="url(#logoGrad2)" stroke-width="2.5"/>
+                                <path d="M10 22L16 10L22 22" stroke="url(#logoGrad2)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="16" cy="16" r="3" fill="url(#logoGrad2)"/>
+                                <defs>
+                                    <linearGradient id="logoGrad2" x1="0" y1="0" x2="32" y2="32">
+                                        <stop stop-color="#6366f1"/>
+                                        <stop offset="1" stop-color="#06b6d4"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                        <span class="logo-text">AI赋能</span>
+                    </a>
+                    <p>让AI成为您企业的核心竞争力。<br>与您共创，为您赋能。</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#about">关于我们</a></li>
+                        <li><a href="#cases">案例展示</a></li>
+                        <li><a href="#process">合作流程</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>行业方案</h4>
+                    <ul>
+                        <li><a href="#">智能制造</a></li>
+                        <li><a href="#">新零售</a></li>
+                        <li><a href="#">金融科技</a></li>
+                        <li><a href="#">医疗健康</a></li>
+                        <li><a href="#">教育培训</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>联系方式</h4>
+                    <ul class="contact-list">
+                        <li>📧 contact@ai-empower.com</li>
+                        <li>📞 400-888-0000</li>
+                        <li>📍 北京市朝阳区科技园</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AI赋能各行各业. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
