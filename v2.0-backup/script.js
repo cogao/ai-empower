@@ -442,14 +442,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modalOverlay) modalOverlay.addEventListener('click', closeModal);
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
-    // ===== 悬浮CTA可见性 =====
-    const floatingCta = document.getElementById('floatingCta');
-    if (floatingCta) {
-        window.addEventListener('scroll', () => {
-            floatingCta.classList.toggle('visible', window.scrollY > 600);
-        });
-    }
-
     // ===== 表单处理 =====
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
@@ -457,7 +449,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const btn = contactForm.querySelector('button[type="submit"]');
             const originalHTML = btn.innerHTML;
-            btn.innerHTML = '<span>✓ 预约成功！24小时内联系您</span>';
+            btn.innerHTML = '<span>提交成功！我们会尽快联系您 ✓</span>';
             btn.style.background = 'linear-gradient(135deg, #059669, #10b981)';
             btn.disabled = true;
             setTimeout(() => {
@@ -465,7 +457,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 btn.style.background = '';
                 btn.disabled = false;
                 contactForm.reset();
-            }, 4000);
+            }, 3000);
         });
     }
 
