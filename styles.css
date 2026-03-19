@@ -250,6 +250,24 @@ ul {
     background-clip: text;
 }
 
+/* Keyword Highlight */
+.kw {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+}
+
+.section-title .kw {
+    font-size: inherit;
+}
+
+.hero-desc .kw {
+    font-size: 1.15em;
+    letter-spacing: 0.5px;
+}
+
 .hero-desc {
     font-size: clamp(1rem, 2vw, 1.25rem);
     color: var(--text-secondary);
