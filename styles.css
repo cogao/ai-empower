@@ -1166,42 +1166,66 @@ ul {
     letter-spacing: 0.5px;
 }
 
-/* --- Trust Bar --- */
+/* --- Trust Bar (Team & Tech) --- */
 .trust-bar {
     background: rgba(15, 15, 45, 0.8);
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
-    padding: 18px 0;
+    padding: 28px 0;
     overflow: hidden;
 }
 
-.trust-items {
+.trust-section {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
     gap: 32px;
-    flex-wrap: wrap;
+}
+
+.trust-block {
+    flex: 1;
 }
 
 .trust-label {
-    font-size: 0.75rem;
+    display: block;
+    font-size: 0.7rem;
     color: var(--text-muted);
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.trust-logo {
-    font-family: var(--font-en);
-    font-size: 0.85rem;
     font-weight: 700;
-    color: var(--text-secondary);
-    opacity: 0.5;
-    transition: opacity var(--transition);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
-.trust-logo:hover {
-    opacity: 1;
+.trust-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.trust-tag {
+    padding: 4px 14px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: rgba(99, 102, 241, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    color: var(--primary-light);
+    white-space: nowrap;
+}
+
+.trust-tag.tech {
+    background: rgba(6, 182, 212, 0.08);
+    border-color: rgba(6, 182, 212, 0.2);
+    color: var(--accent-light);
+    font-family: var(--font-en);
+    font-size: 0.7rem;
+}
+
+.trust-divider-v {
+    width: 1px;
+    min-height: 60px;
+    background: var(--border-color);
+    flex-shrink: 0;
+    align-self: stretch;
 }
 
 /* --- Mid CTA Banner --- */
@@ -1638,8 +1662,15 @@ ul {
         padding: 14px;
     }
 
-    .trust-items {
+    .trust-section {
+        flex-direction: column;
         gap: 20px;
+    }
+
+    .trust-divider-v {
+        width: 100%;
+        min-height: 0;
+        height: 1px;
     }
 
     .process-timeline::before {
