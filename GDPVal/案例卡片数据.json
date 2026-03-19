@@ -1,0 +1,354 @@
+[
+  {
+    "industry": "金融与保险",
+    "industry_en": "Finance and Insurance",
+    "icon": "🏦",
+    "color": "#6366f1",
+    "case_count": 25,
+    "cases": [
+      {
+        "scene": "投资分析报告自动生成",
+        "pain": "分析师需花2-3天手动搜集S&P500全部500家公司的PE数据、按子行业分组、计算均值，再建表出报告",
+        "ai_solution": "AI自动抓取实时金融数据，批量计算LTM和NTM PE倍数，按GICS行业分类自动生成完整Excel分析报告",
+        "metrics": { "time_before": "2-3天", "time_after": "30分钟", "efficiency_multiple": "12x", "annual_save_rmb": "36万/人", "error_reduction": "95%" },
+        "quote": "以前这种全量覆盖的分析只有年底做一次，现在客户随时要都能给",
+        "occupation": "Financial and Investment Analysts"
+      },
+      {
+        "scene": "客户退休咨询方案定制",
+        "pain": "客服代表需30-60分钟查阅TSP政策文档、组织语言、撰写个性化咨询邮件",
+        "ai_solution": "AI自动匹配客户画像与相关政策，生成专业、个性化咨询邮件，覆盖投资基金选择、转换策略等全量信息",
+        "metrics": { "time_before": "60分钟", "time_after": "5分钟", "efficiency_multiple": "12x", "annual_save_rmb": "20万/人", "error_reduction": "90%" },
+        "quote": "客户不用等到第二天就能收到专业回复，满意度飙了",
+        "occupation": "Customer Service Representatives"
+      },
+      {
+        "scene": "新兴市场投资季度回顾",
+        "pain": "销售代理需1-2天整合多个数据源，撰写4页以内的Q1回顾文档，既要有数据又要有策略观点",
+        "ai_solution": "AI自动聚合市场数据、提取关键趋势、生成带图表的专业季度回顾Word文档",
+        "metrics": { "time_before": "1-2天", "time_after": "2小时", "efficiency_multiple": "6x", "annual_save_rmb": "25万/人", "error_reduction": "85%" },
+        "occupation": "Securities Sales Agents"
+      },
+      {
+        "scene": "股权激励方案对比PPT",
+        "pain": "理财顾问需4-6小时研究ISO与NSO的税务差异，制作对比PPT供客户教育",
+        "ai_solution": "AI自动生成含税务计算模型的对比PPT，覆盖AMT影响、行权时机、持有期要求等细节",
+        "metrics": { "time_before": "5小时", "time_after": "30分钟", "efficiency_multiple": "10x", "annual_save_rmb": "15万/人", "error_reduction": "80%" },
+        "occupation": "Personal Financial Advisors"
+      },
+      {
+        "scene": "出行平台增长策略方案",
+        "pain": "战略负责人需数周进行市场调研、竞品分析、制定本地化增长方案PPT",
+        "ai_solution": "AI辅助完成市场数据搜集、竞品分析、监管政策梳理，快速生成可执行的战略方案演示文稿",
+        "metrics": { "time_before": "2-3周", "time_after": "2-3天", "efficiency_multiple": "7x", "annual_save_rmb": "40万/人", "error_reduction": "70%" },
+        "occupation": "Financial Managers"
+      }
+    ]
+  },
+  {
+    "industry": "政府与公共事务",
+    "industry_en": "Government",
+    "icon": "🏛️",
+    "color": "#059669",
+    "case_count": 25,
+    "cases": [
+      {
+        "scene": "政策法规文件起草",
+        "pain": "执法部门无人机使用规程、手册编写需法务1-2周反复修改，涉及大量法条引用",
+        "ai_solution": "AI基于现行法律法规库，自动生成标准化政策文件初稿，含条款引用、格式规范、审批流程",
+        "metrics": { "time_before": "1-2周", "time_after": "1-2天", "efficiency_multiple": "7x", "annual_save_rmb": "30万/团队", "error_reduction": "85%" },
+        "occupation": "First-Line Supervisors of Police"
+      },
+      {
+        "scene": "联邦拨款风险评估",
+        "pain": "拨款专员每份申请需人工填写风险评估表，逐项核对合规要求，半天至一天/份",
+        "ai_solution": "AI自动解析申请材料，匹配2 C.F.R. 200.205合规标准，生成标准化风险评估报告",
+        "metrics": { "time_before": "4-8小时", "time_after": "15分钟", "efficiency_multiple": "15x", "annual_save_rmb": "50万/团队", "error_reduction": "92%" },
+        "occupation": "Compliance Officers"
+      },
+      {
+        "scene": "AI对行政岗位影响研究",
+        "pain": "行政主管需2-3周检索学术文献、撰写AI对政府行政工作影响的研究报告",
+        "ai_solution": "AI自动检索相关学术论文，提取关键发现，按APA格式生成带引用的研究综述",
+        "metrics": { "time_before": "2-3周", "time_after": "2天", "efficiency_multiple": "7x", "annual_save_rmb": "25万/人", "error_reduction": "80%" },
+        "occupation": "Administrative Services Managers"
+      },
+      {
+        "scene": "社区项目评估计划",
+        "pain": "项目总监需编写完整的项目评估方案含逻辑模型、指标体系、数据采集方法",
+        "ai_solution": "AI基于项目目标自动设计评估框架、KPI指标、数据采集工具，生成专业评估计划文档",
+        "metrics": { "time_before": "1-2周", "time_after": "1-2天", "efficiency_multiple": "6x", "annual_save_rmb": "20万/人", "error_reduction": "75%" },
+        "occupation": "Social Workers"
+      }
+    ]
+  },
+  {
+    "industry": "医疗与社会服务",
+    "industry_en": "Health Care and Social Assistance",
+    "icon": "🏥",
+    "color": "#dc2626",
+    "case_count": 25,
+    "cases": [
+      {
+        "scene": "临床处方指南编写",
+        "pain": "医疗总监需2-4周完成激素治疗处方指南，涉及大量循证医学文献检索和同行评审",
+        "ai_solution": "AI检索最新临床证据和权威指南，生成符合虚拟诊疗平台的标准化处方指南文档",
+        "metrics": { "time_before": "3-4周", "time_after": "2-3天", "efficiency_multiple": "7x", "annual_save_rmb": "50万/医疗团队", "error_reduction": "88%" },
+        "quote": "指南更新从季度频率变成月度，患者永远用最新的方案",
+        "occupation": "Medical and Health Services Managers"
+      },
+      {
+        "scene": "循证医学文献综述",
+        "pain": "执业护师需2-3周完成10-15页老年高血压依从性文献综述，含CDC数据引用",
+        "ai_solution": "AI自动检索PubMed/CDC等权威来源，提取关键发现，按学术格式生成完整综述文档",
+        "metrics": { "time_before": "2-3周", "time_after": "1-2天", "efficiency_multiple": "10x", "annual_save_rmb": "30万/人", "error_reduction": "85%" },
+        "occupation": "Nurse Practitioners"
+      },
+      {
+        "scene": "住院医师绩效追踪分析",
+        "pain": "教学秘书需手动整理5年手术关键指标数据到Excel，分析各年级完成趋势",
+        "ai_solution": "AI自动从多源数据整合住院医师手术记录，生成含趋势分析的绩效追踪Excel报表",
+        "metrics": { "time_before": "2-3天", "time_after": "30分钟", "efficiency_multiple": "12x", "annual_save_rmb": "15万/人", "error_reduction": "95%" },
+        "occupation": "Administrative Support Workers"
+      },
+      {
+        "scene": "护理交接标准化模板",
+        "pain": "护士长需设计SBAR交接模板，确保急诊科转科时不遗漏过敏、检查等关键信息",
+        "ai_solution": "AI基于SBAR框架和科室特点，自动生成标准化交接模板，含必填字段验证",
+        "metrics": { "time_before": "3-4小时", "time_after": "10分钟", "efficiency_multiple": "15x", "annual_save_rmb": "避免医疗事故(单例赔偿百万+)", "error_reduction": "95%" },
+        "occupation": "Registered Nurses"
+      }
+    ]
+  },
+  {
+    "industry": "信息与传媒",
+    "industry_en": "Information",
+    "icon": "📺",
+    "color": "#7c3aed",
+    "case_count": 25,
+    "cases": [
+      {
+        "scene": "纪录片脚本撰写",
+        "pain": "编剧需1-2天完成2-8分钟微观世界纪录片脚本，含时间码、画面描述、旁白",
+        "ai_solution": "AI根据主题和受众自动生成含时间码、视觉描述、旁白文本的完整脚本",
+        "metrics": { "time_before": "1-2天", "time_after": "1-2小时", "efficiency_multiple": "8x", "annual_save_rmb": "20万/编剧", "error_reduction": "70%" },
+        "occupation": "Film and Video Editors"
+      },
+      {
+        "scene": "B2B视频制片排期",
+        "pain": "制片人需半天制作8周详细制片排期日历，协调前期准备、拍摄、后期各阶段",
+        "ai_solution": "AI根据项目截止日期和资源约束，自动生成含里程碑的制片日历PDF",
+        "metrics": { "time_before": "4-6小时", "time_after": "30分钟", "efficiency_multiple": "8x", "annual_save_rmb": "15万/团队", "error_reduction": "85%" },
+        "occupation": "Producers and Directors"
+      },
+      {
+        "scene": "选举新闻稿件撰写",
+        "pain": "记者需2-4小时查阅选举信息、核实日期、撰写300-500字中立报道",
+        "ai_solution": "AI自动搜集官方选举信息，确保中立语气，生成含关键日期和投票方式的新闻稿",
+        "metrics": { "time_before": "3小时", "time_after": "20分钟", "efficiency_multiple": "9x", "annual_save_rmb": "18万/记者", "error_reduction": "80%" },
+        "occupation": "News Analysts, Reporters"
+      },
+      {
+        "scene": "科学社论撰写",
+        "pain": "资深编辑需2-3小时撰写500字科学社论，含权威科学新闻引用",
+        "ai_solution": "AI跟踪Nature/Science等顶刊动态，协助编辑快速生成带引用的社论初稿",
+        "metrics": { "time_before": "2-3小时", "time_after": "20分钟", "efficiency_multiple": "7x", "annual_save_rmb": "15万/编辑", "error_reduction": "75%" },
+        "occupation": "Editors"
+      }
+    ]
+  },
+  {
+    "industry": "制造业",
+    "industry_en": "Manufacturing",
+    "icon": "🏭",
+    "color": "#ea580c",
+    "case_count": 25,
+    "cases": [
+      {
+        "scene": "供应商评估与比价矩阵",
+        "pain": "采购经理需1-2天/供应商完成技术评分、成本对比、产能评估的综合报告",
+        "ai_solution": "AI自动整合供应商提交的报价、资质、产能数据，生成多维度对比矩阵和推荐报告",
+        "metrics": { "time_before": "1-2天/家", "time_after": "2小时/家", "efficiency_multiple": "6x", "annual_save_rmb": "采购降本3-8%=数百万", "error_reduction": "90%" },
+        "quote": "AI把我们从'数据搬运工'解放出来，终于有时间做真正的谈判策略",
+        "occupation": "Buyers and Purchasing Agents"
+      },
+      {
+        "scene": "产能追赶排程计划",
+        "pain": "生产主管需1-2天手工计算产能缺口、排班方案、加班计划来追赶延迟2周的工期",
+        "ai_solution": "AI自动分析产能数据、计算追赶路径、生成含加班方案和里程碑的Excel排程计划",
+        "metrics": { "time_before": "1-2天", "time_after": "1小时", "efficiency_multiple": "10x", "annual_save_rmb": "减少停工损失10-50万/次", "error_reduction": "92%" },
+        "occupation": "Production Supervisors"
+      },
+      {
+        "scene": "运费比价与预测分析",
+        "pain": "物流经理需1天查USPS/FedEx/UPS三家运营商各尺寸运费，建立5年趋势预测表",
+        "ai_solution": "AI自动抓取各运营商当前费率，分析历史涨价趋势，生成含预测的决策Excel",
+        "metrics": { "time_before": "1天", "time_after": "30分钟", "efficiency_multiple": "12x", "annual_save_rmb": "物流成本降5-15%", "error_reduction": "95%" },
+        "occupation": "Shipping and Inventory Clerks"
+      },
+      {
+        "scene": "物流分拣流程优化",
+        "pain": "工业工程师需2-3天绘制现有流程图、识别瓶颈、设计优化方案",
+        "ai_solution": "AI分析现有流程数据，自动绘制流程图，标注瓶颈环节，生成优化建议PDF报告",
+        "metrics": { "time_before": "2-3天", "time_after": "半天", "efficiency_multiple": "5x", "annual_save_rmb": "效率提升15-30%", "error_reduction": "80%" },
+        "occupation": "Industrial Engineers"
+      }
+    ]
+  },
+  {
+    "industry": "专业科技技术服务",
+    "industry_en": "Professional, Scientific, and Technical Services",
+    "icon": "💻",
+    "color": "#0891b2",
+    "case_count": 25,
+    "cases": [
+      {
+        "scene": "审计抽样与方差分析",
+        "pain": "审计师需1-2天完成抽样量计算、随机抽样、Q2/Q3方差分析并撰写报告",
+        "ai_solution": "AI自动计算统计抽样量、执行随机抽样、生成方差分析报告Excel",
+        "metrics": { "time_before": "1-2天", "time_after": "1-2小时", "efficiency_multiple": "8x", "annual_save_rmb": "30万/审计师", "error_reduction": "95%" },
+        "occupation": "Accountants and Auditors"
+      },
+      {
+        "scene": "月度财务报表包编制",
+        "pain": "高级会计需2-3天把18个源文件合并更新为月度财务包Excel，含交叉验证",
+        "ai_solution": "AI自动读取所有源文件，更新各工作表，验证余额勾稽，生成完整月度财务包",
+        "metrics": { "time_before": "2-3天", "time_after": "3-4小时", "efficiency_multiple": "6x", "annual_save_rmb": "40万/会计团队", "error_reduction": "93%" },
+        "occupation": "Accountants and Auditors"
+      },
+      {
+        "scene": "遗嘱等法律文书起草",
+        "pain": "律师需2-4小时从零起草符合德州法律的正式遗嘱，含14项具体条款",
+        "ai_solution": "AI根据客户信息和当地法律，自动生成合规遗嘱初稿PDF，含所有标准条款",
+        "metrics": { "time_before": "3-4小时", "time_after": "30分钟", "efficiency_multiple": "7x", "annual_save_rmb": "可计费时间增30%=年增收数十万", "error_reduction": "85%" },
+        "occupation": "Lawyers"
+      },
+      {
+        "scene": "软件系统设计文档",
+        "pain": "CTO/架构师需1-2天完成客户门户系统设计文档，含架构图、API设计、里程碑",
+        "ai_solution": "AI根据需求描述自动生成系统设计方案Word文档，含技术架构、数据模型、开发排期",
+        "metrics": { "time_before": "1-2天", "time_after": "2-3小时", "efficiency_multiple": "5x", "annual_save_rmb": "25万/架构师", "error_reduction": "75%" },
+        "occupation": "Computer and Information Systems Managers"
+      },
+      {
+        "scene": "全栈应用开发",
+        "pain": "4人开发团队需2-4周完成跨链隐私加密应用开发（React+Solidity+后端）",
+        "ai_solution": "AI辅助生成智能合约、前端组件、API层代码，开发者聚焦review和优化",
+        "metrics": { "time_before": "2-4周", "time_after": "3-5天", "efficiency_multiple": "5x", "annual_save_rmb": "开发成本降60%", "error_reduction": "70%" },
+        "occupation": "Software Developers"
+      }
+    ]
+  },
+  {
+    "industry": "房地产与租赁",
+    "industry_en": "Real Estate and Rental and Leasing",
+    "icon": "🏠",
+    "color": "#ca8a04",
+    "case_count": 25,
+    "cases": [
+      {
+        "scene": "多场景租金方案报价",
+        "pain": "物业经理需2-3小时做3/5/10年三套租金阶梯方案Excel，含公式联动",
+        "ai_solution": "AI根据面积、基础租金和增长率，自动生成含公式联动的多场景租金报价Excel",
+        "metrics": { "time_before": "2-3小时", "time_after": "15分钟", "efficiency_multiple": "10x", "annual_save_rmb": "空置率降低→年增收数十万", "error_reduction": "95%" },
+        "quote": "客户还没离开我的办公室，三套方案就发到他邮箱了",
+        "occupation": "Property Managers"
+      },
+      {
+        "scene": "租户招商策略手册",
+        "pain": "商业地产经纪需1-2天制作含市场分析、目标租户画像的QSR招商手册PDF",
+        "ai_solution": "AI分析商圈数据，自动生成带图文的专业招商手册，含市场定位和联系话术",
+        "metrics": { "time_before": "1-2天", "time_after": "2小时", "efficiency_multiple": "6x", "annual_save_rmb": "20万/团队", "error_reduction": "80%" },
+        "occupation": "Real Estate Brokers"
+      },
+      {
+        "scene": "奢华物业餐厅推荐手册",
+        "pain": "礼宾员需一整天调研本地餐厅信息（地址、电话、菜系、价位等），制作Word推荐手册",
+        "ai_solution": "AI自动搜集区域餐厅信息，按菜系分类，生成含完整信息的专业推荐手册",
+        "metrics": { "time_before": "1天", "time_after": "30分钟", "efficiency_multiple": "12x", "annual_save_rmb": "10万/人", "error_reduction": "85%" },
+        "occupation": "Concierges"
+      },
+      {
+        "scene": "首次购房者宣传手册",
+        "pain": "经纪人需3-4小时制作2页NAR新政合规买家宣传册",
+        "ai_solution": "AI基于最新NAR政策自动生成合规的双面买家宣传册Word文档",
+        "metrics": { "time_before": "3-4小时", "time_after": "20分钟", "efficiency_multiple": "10x", "annual_save_rmb": "15万/人", "error_reduction": "90%" },
+        "occupation": "Real Estate Sales Agents"
+      }
+    ]
+  },
+  {
+    "industry": "批发贸易",
+    "industry_en": "Wholesale Trade",
+    "icon": "📦",
+    "color": "#16a34a",
+    "case_count": 25,
+    "cases": [
+      {
+        "scene": "品牌销售绩效分析",
+        "pain": "助理买手需半天从周销售数据制作透视表+品牌汇总表，含WTD/MTD/YTD指标",
+        "ai_solution": "AI自动读取销售数据，创建透视表，按品牌/时段生成多维度分析Excel",
+        "metrics": { "time_before": "4-5小时", "time_after": "15分钟", "efficiency_multiple": "15x", "annual_save_rmb": "15万/人", "error_reduction": "95%" },
+        "occupation": "Order Clerks"
+      },
+      {
+        "scene": "渠道投资策略一页纸",
+        "pain": "策略总监需2-3小时为月度经营会制作渠道差异化投资策略PPT单页",
+        "ai_solution": "AI基于渠道数据自动生成策略分析PPT单页，含ROI对比和投资建议",
+        "metrics": { "time_before": "2-3小时", "time_after": "20分钟", "efficiency_multiple": "7x", "annual_save_rmb": "12万/人", "error_reduction": "80%" },
+        "occupation": "Sales Supervisors"
+      },
+      {
+        "scene": "贸易展潜客名单调研",
+        "pain": "销售代表需1-2天在线调研水产养殖行业AUV/ROV制造商信息，整理到Excel",
+        "ai_solution": "AI自动搜索目标行业企业，提取公司名称、联系方式、产品线等信息到Excel",
+        "metrics": { "time_before": "1-2天", "time_after": "1小时", "efficiency_multiple": "10x", "annual_save_rmb": "20万/销售团队", "error_reduction": "75%" },
+        "occupation": "Sales Representatives"
+      },
+      {
+        "scene": "品牌入驻数据采集文档",
+        "pain": "销售经理需半天设计品牌合作数据采集PDF表单，覆盖运营和销售信息",
+        "ai_solution": "AI根据行业最佳实践自动生成结构化数据采集文档PDF",
+        "metrics": { "time_before": "4小时", "time_after": "30分钟", "efficiency_multiple": "8x", "annual_save_rmb": "10万/人", "error_reduction": "85%" },
+        "occupation": "Sales Managers"
+      }
+    ]
+  },
+  {
+    "industry": "零售业",
+    "industry_en": "Retail Trade",
+    "icon": "🛒",
+    "color": "#e11d48",
+    "case_count": 20,
+    "cases": [
+      {
+        "scene": "奢侈品销售外展设计",
+        "pain": "资深销售需1天为2025度假系列设计4-6页搭配推荐PDF（含服装+配饰+标价）",
+        "ai_solution": "AI根据品牌度假系列产品信息，自动生成含搭配推荐、产品详情和定价的专业PDF",
+        "metrics": { "time_before": "1天", "time_after": "30分钟", "efficiency_multiple": "12x", "annual_save_rmb": "转化率+20%=年增收数十万/店", "error_reduction": "80%" },
+        "occupation": "Retail Sales Supervisors"
+      },
+      {
+        "scene": "销售异议处理培训文档",
+        "pain": "店长需2-3天编写含价格/需求/信任等7类异议处理的完整培训Word文档",
+        "ai_solution": "AI基于零售销售最佳实践，生成含异议分类、话术模板、角色扮演场景的培训文档",
+        "metrics": { "time_before": "2-3天", "time_after": "2小时", "efficiency_multiple": "8x", "annual_save_rmb": "连锁100店年省培训费30-50万", "error_reduction": "75%" },
+        "occupation": "General and Operations Managers"
+      },
+      {
+        "scene": "药房社区健康教育海报",
+        "pain": "药剂师需1-2天设计36x24英寸疣症治疗健康海报PDF（含图文+治疗方案对比）",
+        "ai_solution": "AI自动生成含分区设计、药物对比表、视觉元素的医学教育海报PDF",
+        "metrics": { "time_before": "1-2天", "time_after": "1小时", "efficiency_multiple": "10x", "annual_save_rmb": "设计外包费省5-10万/年", "error_reduction": "85%" },
+        "occupation": "Pharmacists"
+      },
+      {
+        "scene": "卧底调查操作指南",
+        "pain": "高级调查员需1-2天从零编写卧底观察操作指南+现场记录表双文档",
+        "ai_solution": "AI基于调查行业标准，生成含SOP流程、观察要点、记录表格的完整指南PDF套件",
+        "metrics": { "time_before": "1-2天", "time_after": "2小时", "efficiency_multiple": "6x", "annual_save_rmb": "减少窃损→零售企业年省数百万", "error_reduction": "80%" },
+        "occupation": "Private Detectives and Investigators"
+      }
+    ]
+  }
+]
