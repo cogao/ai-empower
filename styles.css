@@ -1166,39 +1166,30 @@ ul {
     letter-spacing: 0.5px;
 }
 
-/* --- Trust Bar (Team & Tech) --- */
-.trust-bar {
-    background: rgba(15, 15, 45, 0.8);
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-    padding: 28px 0;
-    overflow: hidden;
-}
-
-.trust-section {
+/* --- Team & Tech Tags (inside About section) --- */
+.about-team {
+    margin-top: 32px;
     display: flex;
-    align-items: flex-start;
-    gap: 32px;
+    flex-direction: column;
+    gap: 14px;
 }
 
-.trust-block {
-    flex: 1;
+.team-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
-.trust-label {
-    display: block;
+.team-label {
     font-size: 0.7rem;
     color: var(--text-muted);
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.trust-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+    margin-right: 6px;
+    white-space: nowrap;
 }
 
 .trust-tag {
@@ -1218,14 +1209,6 @@ ul {
     color: var(--accent-light);
     font-family: var(--font-en);
     font-size: 0.7rem;
-}
-
-.trust-divider-v {
-    width: 1px;
-    min-height: 60px;
-    background: var(--border-color);
-    flex-shrink: 0;
-    align-self: stretch;
 }
 
 /* --- Mid CTA Banner --- */
@@ -1662,15 +1645,8 @@ ul {
         padding: 14px;
     }
 
-    .trust-section {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .trust-divider-v {
-        width: 100%;
-        min-height: 0;
-        height: 1px;
+    .team-row {
+        justify-content: center;
     }
 
     .process-timeline::before {
