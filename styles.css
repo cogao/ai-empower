@@ -281,8 +281,12 @@ ul {
     gap: 16px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 64px;
+    margin-bottom: 16px;
     animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+.hero-trust-line + .hero-stats {
+    margin-top: 40px;
 }
 
 /* --- Buttons --- */
@@ -340,6 +344,7 @@ ul {
 
 .stat-item {
     text-align: center;
+    line-height: 1;
 }
 
 .stat-number {
@@ -368,7 +373,8 @@ ul {
     display: block;
     font-size: 0.85rem;
     color: var(--text-muted);
-    margin-top: 4px;
+    margin-top: 8px;
+    line-height: 1.4;
 }
 
 .stat-divider {
@@ -1057,7 +1063,7 @@ ul {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-xl);
-    padding: 64px;
+    padding: 56px 48px;
     text-align: center;
     overflow: hidden;
 }
@@ -1079,9 +1085,10 @@ ul {
 
 .cta-card > p {
     color: var(--text-secondary);
-    font-size: 1rem;
-    margin-bottom: 40px;
+    font-size: 0.95rem;
+    margin-bottom: 28px;
     position: relative;
+    line-height: 1.7;
 }
 
 .cta-form {
@@ -1154,8 +1161,8 @@ ul {
 .hero-trust-line {
     font-size: 0.8rem;
     color: var(--text-muted);
-    margin-top: 12px;
-    animation: fadeInUp 0.8s ease-out 0.5s both;
+    margin-bottom: 40px;
+    animation: fadeInUp 0.8s ease-out 0.35s both;
     letter-spacing: 0.5px;
 }
 
@@ -1164,7 +1171,7 @@ ul {
     background: rgba(15, 15, 45, 0.8);
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
-    padding: 20px 0;
+    padding: 18px 0;
     overflow: hidden;
 }
 
@@ -1199,7 +1206,12 @@ ul {
 
 /* --- Mid CTA Banner --- */
 .mid-cta {
-    padding: 0;
+    padding: 0 0 0 0;
+    margin: -40px 0 0 0;
+}
+
+.mid-cta .container {
+    padding: 0 24px;
 }
 
 .mid-cta-inner {
@@ -1552,7 +1564,11 @@ ul {
     }
 
     .cta-card {
-        padding: 40px 24px;
+        padding: 36px 20px;
+    }
+
+    .cta-urgency {
+        font-size: 0.85rem;
     }
 
     .footer-grid {
