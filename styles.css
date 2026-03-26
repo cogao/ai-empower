@@ -291,6 +291,16 @@ ul {
     text-align: left;
 }
 
+.pain-item em {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.8rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .hero-actions {
     display: flex;
     gap: 16px;
