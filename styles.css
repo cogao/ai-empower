@@ -588,12 +588,19 @@ ul {
     margin-bottom: 32px;
 }
 
+.stages-grid.five-steps {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
 .stage-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-lg);
-    padding: 32px 24px;
+    padding: 28px 20px;
     transition: all var(--transition);
+    display: flex;
+    flex-direction: column;
 }
 
 .stage-card:hover {
@@ -605,6 +612,27 @@ ul {
 .stage-highlight {
     border-color: var(--primary);
     background: rgba(99, 102, 241, 0.05);
+}
+
+.stage-price {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: #4ade80;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.stage-highlight .stage-price {
+    color: #fbbf24;
+}
+
+.stage-cta {
+    margin-top: auto;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    text-align: center;
+    justify-content: center;
 }
 
 .stage-level {
@@ -1658,6 +1686,10 @@ ul {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .stages-grid.five-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .case-pain-solution {
         grid-template-columns: 1fr;
     }
@@ -1730,6 +1762,10 @@ ul {
     }
 
     .stages-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stages-grid.five-steps {
         grid-template-columns: 1fr;
     }
 
