@@ -276,6 +276,21 @@ ul {
     animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
+.hero-pain-list {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 8px 24px;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.pain-item {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    text-align: left;
+}
+
 .hero-actions {
     display: flex;
     gap: 16px;
@@ -1746,6 +1761,15 @@ ul {
 
     .hero-content {
         padding: 100px 20px 60px;
+    }
+
+    .hero-pain-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 6px 16px;
+    }
+
+    .pain-item {
+        font-size: 0.8rem;
     }
 
     .hero-stats {
